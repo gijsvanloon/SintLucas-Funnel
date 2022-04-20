@@ -1,8 +1,101 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+:root {
+  --orange: #F8960C;
+  --black: #2A2A2E;
+  --darkgray: #8F8F8F;
+  --gray: #D8D8D8;
+  --lightgray: #F6F6F7;
+  --white: #FFF;
+  /* var(--orange) */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Oswald&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+body {
+  background-color: var(--white);
+}
+
+.titleContainer {
+  margin: 1rem;
+}
+
+.firstSection {
+  background-color: var(--lightgray);
+  padding: 1rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstSection h1 {
+  color: var(--orange);
+  font-size: 1.75rem;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 10%;
+}
+
+.firstSection p {
+  font-family: 'Cardo', serif;
+  color: var(--black);
+}
+
+span {
+  border: 3px solid var(--orange);
+  border-radius: 50%;
+  color: var(--black);  
+  padding: 0.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+
+fieldset {
+  border: none;
+}
+
+.foldContainer {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.btnContinue {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px 10px 20px;
+}
+
+.btnPrevious {
+  background-color: transparent;
+  border: 2px solid var(--black);
+  padding: 10px 20px 10px 20px;
+  color: var(--black);
+  font-weight: bold;
+}
+
+input[type=text] {
+  width: 90%;
+  height: 3rem;
+  border: 1px solid var(--darkgray);
+}
+
+input[type=email] {
+  width: 90%;
+  height: 3rem;
+  border: 1px solid var(--darkgray);
+}
+
+input[type=number] {
+  width: 90%;
+  height: 3rem;
+  border: 1px solid var(--darkgray);
 }
